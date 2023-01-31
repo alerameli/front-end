@@ -5,7 +5,7 @@ function empleos() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:3002/")
+    axios.get("https://alerameli-cv-api.adaptable.app")
       .then(res => {
         setData(res.data.jobs);
       })
