@@ -5,7 +5,7 @@ function proyectos() {
 
     useEffect(() => {
         axios
-            .get("http://localhost:3002/")
+            .get("https://alerameli-cv-api.adaptable.app")
             .then((res) => {
                 setData(res.data.projects);
             })
